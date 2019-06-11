@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson 5 hw</title>
+</head>
+<body>
+
+
+
+
+
+
+	<script>
+		
+
+
+		var userName = prompt('Кто пришел?', '');
+		if (userName === null) {
+			alert('Незнакомец');
+		}
+		else {
+			var userAge = prompt('Сколько вам лет?', '');
+			if (userAge == null) {
+				alert('Тебе хоть есть 18?');
+			}
+			else if (userAge < 17) {
+				alert('Вам меньше 18');
+			}
+			else {
+				var userCity = prompt('Ваш город?', '');
+				if (userCity == null) {
+					alert('Ваш город Харьков');
+				}
+				else {
+					var userPet = confirm('У вас есть домашнее животное?');
+						if (userPet == null) {
+							alert('Не скучно ли вам живется без питомца?');
+						}
+						else {
+							prompt('Как дела у питомца?', '');
+						}
+					}
+				}
+			}
+	</script>
+	
+</body>
+</html>
